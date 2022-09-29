@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <h1>Therapist Matching</h1>
+    <p>
+    <h3>Help us to match you to the right Therapist</h3>
+    </p>
+
+    <body>
+        <form action="menty/">
+            <!---Below we collect socio-demographic information-->
+            <p>
+                <label for="name">Your name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+                <label for="email">Your email</label>
+                <input type="email" id="email" placeholder="Your email" required>
+            </p>
+            <p>
+            <h4>What is your gender identity?</h4>
+            </p>
+            <p>
+                <label for="gender">Gender</label>
+                <Select name="gender" id="gender">
+                    <option value="">Please select your gender</option>
+                    <option value="women">Women</option>
+                    <option value="men">Men</option>
+                    <option value="non-b">Non-binary</option>
+                    <option value="pn">Prefer not to say</option>
+                </Select>
+            </p>
+            <p>
+            <h4>What is your age?</h4>
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" value="age" min="18" placeholder="Please select your age">
+            </p>
+            <p>
+            <h4>How do you identify?</h4>
+            </p>
+            <p>
+                <label for="sex_o">Sexual orientation</label>
+                <select name="sex_o" id="sex_o">
+                    <option value="">Please select your sexual orientation</option>
+                    <option value="straight">Straight</option>
+                    <option value="gay">Gay</option>
+                    <option value="lesbian">Lesbian</option>
+                    <option value="bi-pan">Bi/Pan</option>
+                    <option value="pn">Prefer not to say</option>
+                </select>
+            </p>
+            <p>
+            <h4>What is your relationship status?</h4>
+            </p>
+            <p>
+                <label for="relation">Relationship Status</label>
+                <select name="relation" id="relation">
+                    <option value="">Please select your relationship status</option>
+                    <option value="single">Single</option>
+                    <option value="in_r">In a relationship</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="pn">Prefer not to say</option>
+                </select>
+            </p>
+            <p>
+            <h4>Do you consider yourself religious?</h4>
+            </p>
+            <p>
+                <input type="radio" id="no_r" name="religion">
+                <label for="no_r">NO</label>
+
+            </p>
+            <p>
+                <input type="radio" id="si_r" name="religion">
+                <label for="si_r">SI</label>
+            </p>
+            <p>
+                <input type="radio" id="pn" name="religion">
+                <label for="pn">Prefer not to say</label>
+            </p>
+            <!---Below we collect information about therapy-->
+            <div>
+                <p>
+                <h4>What type of therapy are you looking for?</h4>
+                </p>
+                <p>
+                    <input type="radio" id="ind" name="type" value="Individual">
+                    <label for="ind">Individual (for myself)</label>>
+                </p>
+                <p>
+                    <input type="radio" id="couples" name="type" value="couples">
+                    <label for="couples">Couples (for myself and my partner)</label>
+                </p>
+                <p>
+                    <input type="radio" id="group" name="type" value="group">
+                    <label for="group">Group (For me and my family/friends)</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                <h4>Have you ever been in therapy before?</h4>
+                </p>
+                <p>
+                    <input type="radio" id="yes_t" name="therapy" value="No">
+                    <label for="yes_t">Yes</label>
+                </p>
+                <p>
+                    <input type="radio" id="no_t" name="therapy" value="Yes">
+                    <label for="no_t">No</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                <h4>What led you to consider therapy today?</h4>
+                </p>
+                <p>
+                    <input type="checkbox" name="dep" id="dep" value="dep">
+                    <label for="dep">I've been feeling depressed</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="anx" id="anx" value="anx">
+                    <label for="anx">I feel anxious or overwhelmed</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="mood" id="mood" value="mood">
+                    <label for="mood">My mood is interfering with my job/school performance</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="mean" id="mean" value="mean">
+                    <label for="mean">I can't find porpuse and meaning to my life</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="trauma" id="trauma" value="trauma">
+                    <label for="trauma">I have experienced trauma</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="impro" id="impro" value="impro">
+                    <label for="impro">I want to improve myself</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="explor" id="explor" value="explor">
+                    <label for="explor">I am just exploring</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="other" id="other" value="other">
+                    <label for="other">Other</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                <h4>How would you rate your current physical health?</h4>
+                </p>
+                <p>
+                    <label for="health">Rate your health</label>
+                    <input type="range" id="health" name="health" min="1" max="10">
+                </p>
+                <p>
+                <h4>How would you rate eating habits?</h4>
+                </p>
+                <p>
+                    <label for="eat">Rate your eating habits</label>
+                    <input type="range" id="eat" name="eat" min="1" max="10">
+                </p>
+            </div>
+            <p>
+                Thank you so much for completing this information. We will be back to you as soon as possible with
+                the perfect therapist according to your needs
+            </p>
+            <p>
+                <input type="submit" value="Send">
+            </p>
+
+        </form>
+
+    </body>
+
+</html>
